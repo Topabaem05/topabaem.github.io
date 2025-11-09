@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Haverbex - Towards thoughts</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Serif+Four:wght@400;700;800&display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+        rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#334155",
+                        "background-light": "#F8FAFC",
+                        "background-dark": "#020617",
+                        "slate-800": "#1e293b",
+                        "slate-700": "#334155",
+                        "slate-600": "#475569",
+                        "slate-400": "#94a3b8",
+                        "slate-300": "#cbd5e1",
+                        "slate-200": "#e2e8f0",
+                        "slate-100": "#f1f5f9",
+                        "slate-900": "#0f172a",
+                        "primary-400": "#60a5fa"
+                    },
+                    fontFamily: {
+                        display: ["Lora", "serif"],
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                },
+            },
+        };
+    </script>
+     <style>
+      .material-symbols-outlined {
+        font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+      }
+    </style>
+</head>
+<body class="bg-background-dark font-display text-slate-300 antialiased selection:bg-primary/20">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="py-6">
+            <nav class="flex justify-between items-center border-b border-slate-700 pb-4">
+                <a class="text-2xl font-semibold tracking-wide text-slate-200" href="#">Haverbex</a>
+                <ul class="hidden md:flex items-center space-x-8 text-sm tracking-wider">
+                    <li><a class="hover:text-white transition-colors duration-300" href="#">features</a></li>
+                    <li><a class="hover:text-white transition-colors duration-300" href="#">docs</a></li>
+                    <li><a class="hover:text-white transition-colors duration-300" href="#">About</a></li>
+                    <li><a class="hover:text-white transition-colors duration-300" href="#">content</a></li>
+                </ul>
+                <button class="md:hidden text-slate-300">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                        </path>
+                    </svg>
+                </button>
+            </nav>
+        </header>
+        <main class="flex flex-col items-center justify-center text-center pt-20 pb-16 sm:pt-28 sm:pb-24">
+            <h1 class="text-5xl sm:text-6xl lg:text-8xl font-medium tracking-tight text-slate-100 mb-8">
+                Towards thoughts
+            </h1>
+            <a class="bg-slate-700 text-white font-sans font-semibold py-3 px-8 rounded-md hover:bg-slate-600 transition-colors duration-300 mb-12 sm:mb-16"
+                href="#">
+                Learn More
+            </a>
+            <div class="w-full max-w-4xl">
+                <!-- Placeholder for dither graphic. Replace with actual image when available. -->
+                <img src="https://placehold.co/800x300/020617/334155?text=Haverbex" alt="Dither graphic placeholder" />
+            </div>
+        </main>
+
+        <section class="flex flex-1 justify-center py-16 sm:py-24">
+            <div class="flex flex-col max-w-6xl flex-1 px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col items-center gap-10 @container">
+                    <div class="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                        <div
+                            class="flex flex-1 flex-col items-center gap-6 rounded-xl bg-slate-900 p-8 text-center shadow-sm transition-all hover:shadow-lg hover:shadow-slate-800/60">
+                            <div class="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
+                                <span class="material-symbols-outlined text-primary-400 text-3xl">hub</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h2 class="text-slate-100 text-xl font-bold leading-tight">Seamless
+                                    Integration</h2>
+                                <p class="text-slate-400 text-base font-normal leading-normal">
+                                    Effortlessly connect with the tools you already use and love, creating a
+                                    streamlined workflow that boosts productivity.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-1 flex-col items-center gap-6 rounded-xl bg-slate-900 p-8 text-center shadow-sm transition-all hover:shadow-lg hover:shadow-slate-800/60">
+                            <div class="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
+                                <span class="material-symbols-outlined text-primary-400 text-3xl">bolt</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h2 class="text-slate-100 text-xl font-bold leading-tight">Blazing-Fast
+                                    Performance</h2>
+                                <p class="text-slate-400 text-base font-normal leading-normal">
+                                    Experience unparalleled speed and responsiveness that keeps you and your team in the
+                                    flow, without any frustrating delays.</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex flex-1 flex-col items-center gap-6 rounded-xl bg-slate-900 p-8 text-center shadow-sm transition-all hover:shadow-lg hover:shadow-slate-800/60">
+                            <div class="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
+                                <span class="material-symbols-outlined text-primary-400 text-3xl">verified_user</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h2 class="text-slate-100 text-xl font-bold leading-tight">
+                                    Enterprise-Grade Security</h2>
+                                <p class="text-slate-400 text-base font-normal leading-normal">Your
+                                    data is protected with our robust security measures, giving you complete peace of
+                                    mind to focus on what matters.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="w-full py-20 sm:py-24 lg:py-32">
+            <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div class="layout-content-container mx-auto flex max-w-3xl flex-col text-center">
+                    <!-- SectionHeader Component -->
+                    <h2 class="text-sm font-bold uppercase tracking-[0.015em] text-primary-400">Why Choose Haverbex?</h2>
+                    <!-- Modified BodyText Component as Section Subheading -->
+                    <h3 class="mt-4 text-3xl font-extrabold tracking-tight text-slate-100 sm:text-4xl">
+                        Everything You Need, All in One Place.</h3>
+                    <p class="mt-6 text-lg leading-8 text-slate-400">Streamline your processes, gain
+                        valuable insights, and boost efficiency with our powerful, integrated platform.</p>
+                </div>
+                <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
+                    <!-- Modified TextGrid into a vertical layout -->
+                    <div class="flex flex-col gap-12 lg:gap-16">
+                        <!-- Feature 1 -->
+                        <div class="flex flex-col items-center gap-6 text-center lg:flex-row lg:gap-8 lg:text-left">
+                            <div class="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-xl bg-primary/20 text-primary-400">
+                                <span class="material-symbols-outlined !text-5xl">hub</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h4 class="text-xl font-bold text-slate-100">Seamless Integration</h4>
+                                <p class="text-base text-slate-400">Connect all your systems and teams
+                                    effortlessly with our robust integration capabilities, creating a unified and
+                                    efficient operational ecosystem.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 2 -->
+                        <div class="flex flex-col items-center gap-6 text-center lg:flex-row lg:gap-8 lg:text-left">
+                            <div
+                                class="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-xl bg-primary/20 text-primary-400">
+                                <span class="material-symbols-outlined !text-5xl">insights</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h4 class="text-xl font-bold text-slate-100">Powerful Analytics</h4>
+                                <p class="text-base text-slate-400">Gain valuable insights with our
+                                    comprehensive data and reporting tools to make informed, data-driven decisions that
+                                    propel your business forward.</p>
+                            </div>
+                        </div>
+                        <!-- Feature 3 -->
+                        <div class="flex flex-col items-center gap-6 text-center lg:flex-row lg:gap-8 lg:text-left">
+                            <div
+                                class="flex h-20 w-20 flex-shrink-0 items-center justify-center rounded-xl bg-primary/20 text-primary-400">
+                                <span class="material-symbols-outlined !text-5xl">rocket_launch</span>
+                            </div>
+                            <div class="flex flex-col gap-2">
+                                <h4 class="text-xl font-bold text-slate-100">Automate Your Workflow</h4>
+                                <p class="text-base text-slate-400">Save time and boost efficiency by
+                                    automating repetitive tasks and streamlining your processes, freeing up your team to
+                                    focus on high-impact work.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
