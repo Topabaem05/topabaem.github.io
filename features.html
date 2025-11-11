@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="ko" class="dark">
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Haverbex - Features</title>
+    <title>Haverbex - 기능 소개</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Serif+Four:wght@400;700;800&display=swap"
-        rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
         rel="stylesheet" />
@@ -36,8 +28,8 @@
                         "primary-400": "#60a5fa"
                     },
                     fontFamily: {
-                        display: ["Lora", "serif"],
-                        sans: ['Inter', 'sans-serif'],
+                        display: ["BookkMyungjo", "serif"],
+                        sans: ["Pretendard", "system-ui", "sans-serif"],
                     },
                     borderRadius: {
                         DEFAULT: "0.25rem",
@@ -50,11 +42,32 @@
         };
     </script>
     <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+        @font-face {
+          font-family: 'BookkMyungjo';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2') format('woff2');
+          font-weight: 400;
+          font-display: swap;
+        }
+
+        @font-face {
+          font-family: 'BookkMyungjo';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+          font-weight: 700;
+          font-display: swap;
+        }
+
+        :root {
+          --brand-navy: #2B3650;
+          --accent-beige: #F5F5DC;
+        }
+
         body {
             background-image: url("./R1280x0 11.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: top left;
+            background-repeat: repeat;
             background-attachment: fixed;
         }
         .material-symbols-outlined {
@@ -66,18 +79,18 @@
         }
     </style>
 </head>
-<body class="bg-background-dark font-display text-[#F5F5DC] antialiased selection:bg-primary/20">
+<body class="bg-background-dark font-sans text-[color:var(--brand-navy)] antialiased selection:bg-primary/20">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <header class="py-6">
             <nav class="flex justify-between items-center border-b border-slate-700 pb-4">
-                <a class="text-2xl font-semibold tracking-wide text-[#F5F5DC]" href="index.html">Haverbex</a>
+                <a class="text-2xl font-semibold tracking-wide text-[color:var(--brand-navy)]" href="index.html">Haverbex</a>
                 <ul class="hidden md:flex items-center space-x-8 text-sm tracking-wider">
-                    <li><a class="text-primary-400 underline underline-offset-4" href="features.html">features</a></li>
-                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="docs.html">docs</a></li>
-                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="about.html">About</a></li>
-                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">content</a></li>
+                    <li><a class="text-primary-400 underline underline-offset-4" href="features.html">기능</a></li>
+                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="docs.html">문서</a></li>
+                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="about.html">소개</a></li>
+                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">콘텐츠</a></li>
                 </ul>
-                <button class="md:hidden text-[#F5F5DC]">
+                <button class="md:hidden text-[color:var(--brand-navy)]">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -87,47 +100,47 @@
             </nav>
         </header>
         <main class="py-20 sm:py-28 lg:py-32">
-            <section class="mx-auto max-w-4xl text-center">
-                <h1 class="text-5xl sm:text-6xl font-semibold tracking-tight">Features</h1>
-                <p class="mt-6 text-lg leading-8 text-slate-200">
-                    Explore the capabilities that make Haverbex a powerful companion for teams of every size.
+        <section class="mx-auto max-w-4xl text-center">
+            <h1 class="font-display text-5xl sm:text-6xl font-semibold tracking-tight text-[color:var(--brand-navy)]">주요 기능</h1>
+            <p class="mt-6 text-lg leading-8 text-slate-200">
+                모든 규모의 팀이 Haverbex와 함께 강력한 역량을 발휘할 수 있는 이유를 확인해 보세요.
                 </p>
             </section>
             <section class="mt-16 grid gap-8 md:grid-cols-2">
                 <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
                     <div class="flex items-center gap-4">
                         <span class="material-symbols-outlined text-primary-400 text-3xl">hub</span>
-                        <h2 class="text-2xl font-bold text-[#F5F5DC]">Unified Integrations</h2>
+                    <h2 class="font-display text-2xl font-bold text-[#F5F5DC]">통합 연동</h2>
                     </div>
                     <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Connect with popular tools and services through our library of integrations designed to keep your work in sync.
+                    인기 있는 도구와 서비스를 폭넓은 연동 라이브러리로 연결해 모든 업무를 완벽하게 동기화하세요.
                     </p>
                 </article>
                 <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
                     <div class="flex items-center gap-4">
                         <span class="material-symbols-outlined text-primary-400 text-3xl">rocket_launch</span>
-                        <h2 class="text-2xl font-bold text-[#F5F5DC]">Automation Pipelines</h2>
+                    <h2 class="font-display text-2xl font-bold text-[#F5F5DC]">자동화 파이프라인</h2>
                     </div>
                     <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Automate repetitive workflows with visual builders and event triggers that adapt to your team’s processes.
+                    팀의 프로세스에 맞춘 시각적 빌더와 이벤트 트리거로 반복 업무를 자동화하십시오.
                     </p>
                 </article>
                 <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
                     <div class="flex items-center gap-4">
                         <span class="material-symbols-outlined text-primary-400 text-3xl">insights</span>
-                        <h2 class="text-2xl font-bold text-[#F5F5DC]">Insightful Analytics</h2>
+                    <h2 class="font-display text-2xl font-bold text-[#F5F5DC]">인사이트 분석</h2>
                     </div>
                     <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Monitor progress in real time with dashboards and alerts that help teams stay ahead of critical decisions.
+                    팀이 중요한 결정을 앞서 준비할 수 있도록 실시간 대시보드와 알림으로 진행 상황을 모니터링하세요.
                     </p>
                 </article>
                 <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
                     <div class="flex items-center gap-4">
                         <span class="material-symbols-outlined text-primary-400 text-3xl">verified_user</span>
-                        <h2 class="text-2xl font-bold text-[#F5F5DC]">Enterprise Safeguards</h2>
+                    <h2 class="font-display text-2xl font-bold text-[#F5F5DC]">기업용 보안</h2>
                     </div>
                     <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Keep data secure with fine-grained access controls, audit trails, and compliance-ready infrastructure.
+                    세분화된 접근 제어와 감사 기록, 컴플라이언스에 대응하는 인프라로 데이터를 안전하게 보호하세요.
                     </p>
                 </article>
             </section>
