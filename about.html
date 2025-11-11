@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="ko" class="dark">
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Haverbex - About</title>
+    <title>Haverbex - 소개</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Serif+Four:wght@400;700;800&display=swap"
-        rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
         rel="stylesheet" />
@@ -36,8 +28,8 @@
                         "primary-400": "#60a5fa"
                     },
                     fontFamily: {
-                        display: ["Lora", "serif"],
-                        sans: ['Inter', 'sans-serif'],
+                        display: ["BookkMyungjo", "serif"],
+                        sans: ["Pretendard", "system-ui", "sans-serif"],
                     },
                     borderRadius: {
                         DEFAULT: "0.25rem",
@@ -50,11 +42,32 @@
         };
     </script>
     <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+        @font-face {
+          font-family: 'BookkMyungjo';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2') format('woff2');
+          font-weight: 400;
+          font-display: swap;
+        }
+
+        @font-face {
+          font-family: 'BookkMyungjo';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+          font-weight: 700;
+          font-display: swap;
+        }
+
+        :root {
+          --brand-navy: #2B3650;
+          --accent-beige: #F5F5DC;
+        }
+
         body {
             background-image: url("./R1280x0 11.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: top left;
+            background-repeat: repeat;
             background-attachment: fixed;
         }
         .material-symbols-outlined {
@@ -66,18 +79,18 @@
         }
     </style>
 </head>
-<body class="bg-background-dark font-display text-[#F5F5DC] antialiased selection:bg-primary/20">
+<body class="bg-background-dark font-sans text-[color:var(--brand-navy)] antialiased selection:bg-primary/20">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <header class="py-6">
             <nav class="flex justify-between items-center border-b border-slate-700 pb-4">
-                <a class="text-2xl font-semibold tracking-wide text-[#F5F5DC]" href="index.html">Haverbex</a>
+                <a class="text-2xl font-semibold tracking-wide text-[color:var(--brand-navy)]" href="index.html">Haverbex</a>
                 <ul class="hidden md:flex items-center space-x-8 text-sm tracking-wider">
-                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="features.html">features</a></li>
-                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="docs.html">docs</a></li>
-                    <li><a class="text-primary-400 underline underline-offset-4" href="about.html">About</a></li>
-                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">content</a></li>
+                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="features.html">기능</a></li>
+                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="docs.html">문서</a></li>
+                    <li><a class="text-primary-400 underline underline-offset-4" href="about.html">소개</a></li>
+                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">콘텐츠</a></li>
                 </ul>
-                <button class="md:hidden text-[#F5F5DC]">
+                <button class="md:hidden text-[color:var(--brand-navy)]">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -87,31 +100,31 @@
             </nav>
         </header>
         <main class="py-20 sm:py-28 lg:py-32">
-            <section class="mx-auto max-w-3xl text-center">
-                <h1 class="text-5xl sm:text-6xl font-semibold tracking-tight">About Haverbex</h1>
-                <p class="mt-6 text-lg leading-8 text-slate-200">
-                    We build thoughtful tools that help teams focus, collaborate, and unlock their best work.
+        <section class="mx-auto max-w-3xl text-center">
+            <h1 class="font-display text-5xl sm:text-6xl font-semibold tracking-tight text-[color:var(--brand-navy)]">Haverbex 소개</h1>
+            <p class="mt-6 text-lg leading-8 text-slate-200">
+                우리는 팀이 집중하고 협업하며 최고의 성과를 낼 수 있도록 세심한 도구를 만듭니다.
                 </p>
             </section>
             <section class="mt-16 grid gap-12 lg:grid-cols-2 lg:items-start">
                 <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
-                    <h2 class="text-2xl font-bold text-[#F5F5DC]">Our Mission</h2>
+                <h2 class="font-display text-2xl font-bold text-[#F5F5DC]">우리의 미션</h2>
                     <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Haverbex is on a mission to remove friction from complex workflows. We design software that adapts to the way teams actually operate, pairing intuitive interfaces with robust infrastructure.
+                    Haverbex는 복잡한 워크플로에서 마찰을 없애는 것을 목표로 합니다. 직관적인 인터페이스와 견고한 인프라를 결합해 팀의 실제 운영 방식에 맞는 소프트웨어를 설계합니다.
                     </p>
                 </article>
                 <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
-                    <h2 class="text-2xl font-bold text-[#F5F5DC]">Our Values</h2>
+                <h2 class="font-display text-2xl font-bold text-[#F5F5DC]">우리의 가치</h2>
                     <ul class="mt-4 space-y-4 text-[#F5F5DC]">
-                        <li><strong class="font-semibold text-primary-400">Clarity</strong> — make decisions transparent and data-informed.</li>
-                        <li><strong class="font-semibold text-primary-400">Care</strong> — craft experiences that respect people’s time and attention.</li>
-                        <li><strong class="font-semibold text-primary-400">Courage</strong> — explore bold ideas and deliver them with reliability.</li>
+                    <li><strong class="font-semibold text-primary-400">명확성</strong> — 투명하고 데이터에 기반한 결정을 내립니다.</li>
+                    <li><strong class="font-semibold text-primary-400">배려</strong> — 사람들의 시간과 주의를 존중하는 경험을 만듭니다.</li>
+                    <li><strong class="font-semibold text-primary-400">용기</strong> — 대담한 아이디어를 탐구하고 신뢰성 있게 실현합니다.</li>
                     </ul>
                 </article>
                 <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur lg:col-span-2">
-                    <h2 class="text-2xl font-bold text-[#F5F5DC]">The Team</h2>
+                <h2 class="font-display text-2xl font-bold text-[#F5F5DC]">팀 소개</h2>
                     <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Our multidisciplinary team spans engineering, product, and customer success. We work remotely across time zones, sharing the same goal of creating delightful software with measurable impact.
+                    엔지니어링, 프로덕트, 고객 성공 등 다양한 분야의 구성원이 함께합니다. 우리는 시간대를 넘어 원격으로 협력하며, 측정 가능한 가치를 만드는 즐거운 소프트웨어를 목표로 합니다.
                     </p>
                 </article>
             </section>

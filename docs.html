@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="ko" class="dark">
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Haverbex - Documentation</title>
+    <title>Haverbex - 문서 센터</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Serif+Four:wght@400;700;800&display=swap"
-        rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
         rel="stylesheet" />
@@ -36,8 +28,8 @@
                         "primary-400": "#60a5fa"
                     },
                     fontFamily: {
-                        display: ["Lora", "serif"],
-                        sans: ['Inter', 'sans-serif'],
+                        display: ["BookkMyungjo", "serif"],
+                        sans: ["Pretendard", "system-ui", "sans-serif"],
                     },
                     borderRadius: {
                         DEFAULT: "0.25rem",
@@ -50,11 +42,32 @@
         };
     </script>
     <style>
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+        @font-face {
+          font-family: 'BookkMyungjo';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2') format('woff2');
+          font-weight: 400;
+          font-display: swap;
+        }
+
+        @font-face {
+          font-family: 'BookkMyungjo';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+          font-weight: 700;
+          font-display: swap;
+        }
+
+        :root {
+          --brand-navy: #2B3650;
+          --accent-beige: #F5F5DC;
+        }
+
         body {
             background-image: url("./R1280x0 11.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
+            background-size: auto;
+            background-position: top left;
+            background-repeat: repeat;
             background-attachment: fixed;
         }
         .material-symbols-outlined {
@@ -66,18 +79,18 @@
         }
     </style>
 </head>
-<body class="bg-background-dark font-display text-[#F5F5DC] antialiased selection:bg-primary/20">
+<body class="bg-background-dark font-sans text-[color:var(--brand-navy)] antialiased selection:bg-primary/20">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <header class="py-6">
             <nav class="flex justify-between items-center border-b border-slate-700 pb-4">
-                <a class="text-2xl font-semibold tracking-wide text-[#F5F5DC]" href="index.html">Haverbex</a>
+                <a class="text-2xl font-semibold tracking-wide text-[color:var(--brand-navy)]" href="index.html">Haverbex</a>
                 <ul class="hidden md:flex items-center space-x-8 text-sm tracking-wider">
-                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="features.html">features</a></li>
-                    <li><a class="text-primary-400 underline underline-offset-4" href="docs.html">docs</a></li>
-                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="about.html">About</a></li>
-                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">content</a></li>
+                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="features.html">기능</a></li>
+                    <li><a class="text-primary-400 underline underline-offset-4" href="docs.html">문서</a></li>
+                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="about.html">소개</a></li>
+                    <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">콘텐츠</a></li>
                 </ul>
-                <button class="md:hidden text-[#F5F5DC]">
+                <button class="md:hidden text-[color:var(--brand-navy)]">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -87,38 +100,38 @@
             </nav>
         </header>
         <main class="py-20 sm:py-28 lg:py-32">
-            <section class="mx-auto max-w-3xl text-center">
-                <h1 class="text-5xl sm:text-6xl font-semibold tracking-tight">Documentation</h1>
-                <p class="mt-6 text-lg leading-8 text-slate-200">
-                    Find technical guidance, API references, and setup tutorials to get the most out of Haverbex.
+        <section class="mx-auto max-w-3xl text-center">
+            <h1 class="font-display text-5xl sm:text-6xl font-semibold tracking-tight text-[color:var(--brand-navy)]">문서 센터</h1>
+            <p class="mt-6 text-lg leading-8 text-slate-200">
+                기술 가이드, API 참고 자료, 설정 튜토리얼 등 Haverbex를 완벽하게 활용할 수 있는 정보를 만나보세요.
                 </p>
             </section>
             <section class="mt-16 grid gap-10">
                 <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
-                    <h2 class="text-2xl font-bold text-[#F5F5DC]">Quickstart</h2>
+                <h2 class="font-display text-2xl font-bold text-[#F5F5DC]">빠른 시작</h2>
                     <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Deploy your first workspace in minutes with configuration templates, environment variables, and CLI walkthroughs tailored for rapid onboarding.
+                    구성 템플릿, 환경 변수, CLI 안내를 활용해 몇 분 만에 첫 워크스페이스를 구축하고 빠르게 온보딩하세요.
                     </p>
                     <a class="mt-6 inline-flex items-center text-primary-400 hover:underline underline-offset-4" href="#">
-                        Read the quickstart guide
+                    빠른 시작 가이드 읽기
                     </a>
                 </article>
                 <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
-                    <h2 class="text-2xl font-bold text-[#F5F5DC]">API Reference</h2>
+                <h2 class="font-display text-2xl font-bold text-[#F5F5DC]">API 레퍼런스</h2>
                     <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Explore REST and GraphQL endpoints with sample requests, authentication flows, and rate-limit policies.
+                    예제 요청, 인증 흐름, 레이트 리밋 정책과 함께 REST 및 GraphQL 엔드포인트를 살펴보세요.
                     </p>
                     <a class="mt-6 inline-flex items-center text-primary-400 hover:underline underline-offset-4" href="#">
-                        View API documentation
+                    API 문서 보기
                     </a>
                 </article>
                 <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
-                    <h2 class="text-2xl font-bold text-[#F5F5DC]">Deployment Guides</h2>
+                <h2 class="font-display text-2xl font-bold text-[#F5F5DC]">배포 가이드</h2>
                     <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Follow best practices for deploying Haverbex on-premise or in the cloud with detailed infrastructure diagrams and automation scripts.
+                    온프레미스와 클라우드 어디서나 활용할 수 있도록 인프라 다이어그램과 자동화 스크립트로 구성된 모범 사례를 제공합니다.
                     </p>
                     <a class="mt-6 inline-flex items-center text-primary-400 hover:underline underline-offset-4" href="#">
-                        Browse deployment options
+                    배포 옵션 살펴보기
                     </a>
                 </article>
             </section>

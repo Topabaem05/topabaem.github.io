@@ -1,18 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="ko" class="dark">
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Haverbex - Towards thoughts</title>
+    <title>Haverbex - 생각을 향해</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&amp;display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Serif+Four:wght@400;700;800&display=swap"
-        rel="stylesheet" />
     <link
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
         rel="stylesheet" />
@@ -36,8 +28,8 @@
                         "primary-400": "#60a5fa"
                     },
                     fontFamily: {
-                        display: ["Lora", "serif"],
-                        sans: ['Inter', 'sans-serif'],
+                        display: ["BookkMyungjo", "serif"],
+                        sans: ["Pretendard", "system-ui", "sans-serif"],
                     },
                     borderRadius: {
                         DEFAULT: "0.25rem",
@@ -50,34 +42,70 @@
         };
     </script>
      <style>
-      body {
-        background-image: url("./R1280x0 11.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-      }
-      .material-symbols-outlined {
+        @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css");
+
+        @font-face {
+          font-family: 'BookkMyungjo';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2') format('woff2');
+          font-weight: 400;
+          font-display: swap;
+        }
+
+        @font-face {
+          font-family: 'BookkMyungjo';
+          src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Bd.woff2') format('woff2');
+          font-weight: 700;
+          font-display: swap;
+        }
+
+        :root {
+          --brand-navy: #2B3650;
+          --accent-beige: #F5F5DC;
+        }
+
+        body {
+          background-image: url("./R1280x0 11.png");
+          background-size: auto;
+          background-position: top left;
+          background-repeat: repeat;
+          background-attachment: fixed;
+        }
+        .material-symbols-outlined {
         font-variation-settings:
         'FILL' 0,
         'wght' 400,
         'GRAD' 0,
         'opsz' 24
       }
+
+        .hero-graphic {
+          width: 120%;
+          max-width: none;
+          margin-left: -10%;
+          margin-right: -10%;
+        }
+
+        @media (max-width: 768px) {
+          .hero-graphic {
+            width: 110%;
+            margin-left: -5%;
+            margin-right: -5%;
+          }
+        }
     </style>
 </head>
-<body class="bg-background-dark font-display text-[#2B3650] antialiased selection:bg-primary/20">
+  <body class="bg-background-dark font-sans text-[color:var(--brand-navy)] antialiased selection:bg-primary/20">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <header class="py-6">
-             <nav class="flex justify-between items-center border-b border-slate-700 pb-4">
-                 <a class="text-2xl font-semibold tracking-wide text-[#F5F5DC]" href="index.html">Haverbex</a>
+          <header class="py-6">
+               <nav class="flex justify-between items-center border-b border-slate-700 pb-4">
+                   <a class="text-2xl font-semibold tracking-wide text-[color:var(--brand-navy)]" href="index.html">Haverbex</a>
                  <ul class="hidden md:flex items-center space-x-8 text-sm tracking-wider">
-                     <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="features.html">features</a></li>
-                     <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="docs.html">docs</a></li>
-                     <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="about.html">About</a></li>
-                     <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">content</a></li>
+                       <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="features.html">기능</a></li>
+                       <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="docs.html">문서</a></li>
+                       <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="about.html">소개</a></li>
+                       <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">콘텐츠</a></li>
                 </ul>
-                 <button class="md:hidden text-[#F5F5DC]">
+                   <button class="md:hidden text-[color:var(--brand-navy)]">
                     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                         xmlns="http://www.w3.org/2000/svg">
                         <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -86,16 +114,16 @@
                 </button>
             </nav>
         </header>
-        <main class="flex flex-col items-center justify-center text-center pt-20 pb-16 sm:pt-28 sm:pb-24">
-            <h1 class="text-5xl sm:text-6xl lg:text-8xl font-medium tracking-tight text-[#2B3650] mb-8">
-                Towards thoughts
+          <main class="flex flex-col items-center justify-center text-center pt-20 pb-16 sm:pt-28 sm:pb-24">
+              <h1 class="font-display text-5xl sm:text-6xl lg:text-8xl font-medium tracking-tight text-[#2B3650] mb-8">
+                  생각을 향해
             </h1>
-            <a class="bg-slate-700 text-[#2B3650] font-sans font-semibold py-3 px-8 rounded-md hover:bg-slate-600 transition-colors duration-300 mb-12 sm:mb-16"
+              <a class="bg-[color:var(--accent-beige)] text-[color:var(--brand-navy)] font-sans font-semibold py-3 px-8 rounded-md transition-colors duration-300 mb-12 sm:mb-16 hover:bg-[#f0eacb]"
                 href="#">
-                Learn More
+                  자세히 살펴보기
             </a>
-            <div class="w-full max-w-4xl">
-                <img src="./Group%202.png" alt="Group 2 graphic" />
+              <div class="w-full max-w-5xl">
+                  <img class="hero-graphic" src="./Group%202.png" alt="Group 2 graphic" />
             </div>
         </main>
 
@@ -103,17 +131,15 @@
             <div class="flex flex-col max-w-6xl flex-1 px-4 sm:px-6 lg:px-8">
                 <div class="flex flex-col items-center gap-10 @container">
                     <div class="grid w-full grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                        <div
+                          <div
                             class="flex flex-1 flex-col items-center gap-6 rounded-xl bg-slate-900 p-8 text-center shadow-sm transition-all hover:shadow-lg hover:shadow-slate-800/60">
                             <div class="flex h-14 w-14 items-center justify-center rounded-full bg-primary/10">
                                 <span class="material-symbols-outlined text-primary-400 text-3xl">hub</span>
                             </div>
                              <div class="flex flex-col gap-2">
-                                 <h2 class="text-[#F5F5DC] text-xl font-bold leading-tight">Seamless
-                                    Integration</h2>
-                                 <p class="text-[#F5F5DC] text-base font-normal leading-normal">
-                                    Effortlessly connect with the tools you already use and love, creating a
-                                    streamlined workflow that boosts productivity.</p>
+                                   <h2 class="font-display text-[#F5F5DC] text-xl font-bold leading-tight">매끄러운 연동</h2>
+                                   <p class="text-[#F5F5DC] text-base font-normal leading-normal">
+                                      이미 사용 중인 도구들과 자연스럽게 연결해 생산성을 높여 주는 통합 워크플로를 구축하세요.</p>
                             </div>
                         </div>
                         <div
@@ -122,11 +148,9 @@
                                 <span class="material-symbols-outlined text-primary-400 text-3xl">bolt</span>
                             </div>
                              <div class="flex flex-col gap-2">
-                                 <h2 class="text-[#F5F5DC] text-xl font-bold leading-tight">Blazing-Fast
-                                    Performance</h2>
-                                 <p class="text-[#F5F5DC] text-base font-normal leading-normal">
-                                    Experience unparalleled speed and responsiveness that keeps you and your team in the
-                                    flow, without any frustrating delays.</p>
+                                   <h2 class="font-display text-[#F5F5DC] text-xl font-bold leading-tight">압도적인 속도</h2>
+                                   <p class="text-[#F5F5DC] text-base font-normal leading-normal">
+                                      답답한 지연 없이 팀이 흐름을 유지할 수 있도록 탁월한 속도와 반응성을 경험하세요.</p>
                             </div>
                         </div>
                         <div
@@ -135,11 +159,9 @@
                                 <span class="material-symbols-outlined text-primary-400 text-3xl">verified_user</span>
                             </div>
                              <div class="flex flex-col gap-2">
-                                 <h2 class="text-[#F5F5DC] text-xl font-bold leading-tight">
-                                    Enterprise-Grade Security</h2>
-                                 <p class="text-[#F5F5DC] text-base font-normal leading-normal">Your
-                                    data is protected with our robust security measures, giving you complete peace of
-                                    mind to focus on what matters.</p>
+                                   <h2 class="font-display text-[#F5F5DC] text-xl font-bold leading-tight">
+                                      엔터프라이즈급 보안</h2>
+                                   <p class="text-[#F5F5DC] text-base font-normal leading-normal">강력한 보안 체계로 데이터를 지켜 드려 중요한 일에 집중할 수 있습니다.</p>
                             </div>
                         </div>
                     </div>
@@ -151,12 +173,11 @@
             <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 <div class="layout-content-container mx-auto flex max-w-3xl flex-col text-center">
                     <!-- SectionHeader Component -->
-                    <h2 class="text-sm font-bold uppercase tracking-[0.015em] text-primary-400">Why Choose Haverbex?</h2>
+                      <h2 class="font-display text-sm font-bold uppercase tracking-[0.015em] text-primary-400">왜 Haverbex를 선택해야 할까요?</h2>
                     <!-- Modified BodyText Component as Section Subheading -->
-                    <h3 class="mt-4 text-3xl font-extrabold tracking-tight text-[#2B3650] sm:text-4xl">
-                        Everything You Need, All in One Place.</h3>
-                    <p class="mt-6 text-lg leading-8 text-[#2B3650]">Streamline your processes, gain
-                        valuable insights, and boost efficiency with our powerful, integrated platform.</p>
+                      <h3 class="font-display mt-4 text-3xl font-extrabold tracking-tight text-[#2B3650] sm:text-4xl">
+                          필요한 모든 것을 한곳에.</h3>
+                      <p class="mt-6 text-lg leading-8 text-[#2B3650]">강력한 통합 플랫폼으로 프로세스를 단순화하고, 인사이트를 확보하며, 팀 효율을 극대화하십시오.</p>
                 </div>
                 <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
                     <!-- Modified TextGrid into a vertical layout -->
@@ -167,10 +188,8 @@
                                 <span class="material-symbols-outlined !text-5xl">hub</span>
                             </div>
                             <div class="flex flex-col gap-2">
-                                <h4 class="text-xl font-bold text-[#2B3650]">Seamless Integration</h4>
-                                <p class="text-base text-slate-400">Connect all your systems and teams
-                                    effortlessly with our robust integration capabilities, creating a unified and
-                                    efficient operational ecosystem.</p>
+                                  <h4 class="font-display text-xl font-bold text-[#2B3650]">매끄러운 연동</h4>
+                                  <p class="text-base text-slate-400">탄탄한 연동 기능으로 모든 시스템과 팀을 자연스럽게 연결하여 통합되고 효율적인 운영 환경을 완성합니다.</p>
                             </div>
                         </div>
                         <!-- Feature 2 -->
@@ -180,10 +199,8 @@
                                 <span class="material-symbols-outlined !text-5xl">insights</span>
                             </div>
                             <div class="flex flex-col gap-2">
-                                <h4 class="text-xl font-bold text-[#2B3650]">Powerful Analytics</h4>
-                                <p class="text-base text-slate-400">Gain valuable insights with our
-                                    comprehensive data and reporting tools to make informed, data-driven decisions that
-                                    propel your business forward.</p>
+                                  <h4 class="font-display text-xl font-bold text-[#2B3650]">강력한 분석</h4>
+                                  <p class="text-base text-slate-400">포괄적인 데이터와 보고 도구로 의미 있는 인사이트를 확보하고 데이터 기반 의사결정을 내려 비즈니스를 성장시킵니다.</p>
                             </div>
                         </div>
                         <!-- Feature 3 -->
@@ -193,16 +210,14 @@
                                 <span class="material-symbols-outlined !text-5xl">rocket_launch</span>
                             </div>
                             <div class="flex flex-col gap-2">
-                                <h4 class="text-xl font-bold text-[#2B3650]">Automate Your Workflow</h4>
-                                <p class="text-base text-slate-400">Save time and boost efficiency by
-                                    automating repetitive tasks and streamlining your processes, freeing up your team to
-                                    focus on high-impact work.</p>
+                                  <h4 class="font-display text-xl font-bold text-[#2B3650]">워크플로 자동화</h4>
+                                  <p class="text-base text-slate-400">반복 업무를 자동화하여 시간을 절약하고 프로세스를 간소화해 팀이 더 가치 있는 일에 집중하도록 돕습니다.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+                  </div>
         </section>
-    </div>
+      </div>
 </body>
 </html>
