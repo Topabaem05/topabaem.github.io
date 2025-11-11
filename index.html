@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="dark">
-<head>
+    <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Haverbex - Towards thoughts</title>
@@ -48,14 +48,16 @@
                 },
             },
         };
-    </script>
-     <style>
+        </script>
+        <script defer src="nav.js"></script>
+       <style>
       body {
         background-image: url("./R1280x0 11.png");
-        background-size: cover;
-        background-position: center;
+          background-size: auto;
+          background-position: top center;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+          background-attachment: scroll;
+          background-color: #020617;
       }
       .material-symbols-outlined {
         font-variation-settings:
@@ -64,39 +66,69 @@
         'GRAD' 0,
         'opsz' 24
       }
-    </style>
+      </style>
 </head>
 <body class="bg-background-dark font-display text-[#2B3650] antialiased selection:bg-primary/20">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <header class="py-6">
-             <nav class="flex justify-between items-center border-b border-slate-700 pb-4">
-                 <a class="text-2xl font-semibold tracking-wide text-[#F5F5DC]" href="index.html">Haverbex</a>
-                 <ul class="hidden md:flex items-center space-x-8 text-sm tracking-wider">
-                     <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="features.html">features</a></li>
-                     <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="docs.html">docs</a></li>
-                     <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="about.html">About</a></li>
-                     <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">content</a></li>
-                </ul>
-                 <button class="md:hidden text-[#F5F5DC]">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                        </path>
-                    </svg>
-                </button>
-            </nav>
+               <nav class="flex items-center justify-between border-b border-slate-700 pb-4">
+                   <a class="text-2xl font-semibold tracking-wide text-[#F5F5DC]" href="index.html">Haverbex</a>
+                   <ul class="hidden items-center space-x-8 text-sm tracking-wider md:flex">
+                       <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="features.html">features</a></li>
+                       <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="docs.html">docs</a></li>
+                       <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="about.html">About</a></li>
+                       <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">content</a></li>
+                  </ul>
+                   <button type="button" class="inline-flex items-center justify-center rounded-full border border-slate-700/60 bg-slate-900/70 p-2 text-[#F5F5DC] transition hover:border-primary-400/60 hover:text-primary-400 md:hidden" aria-expanded="false" aria-controls="mobile-navigation" data-menu-button data-menu-target="mobile-navigation">
+                      <span class="sr-only">메뉴 열기</span>
+                      <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                          xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                          </path>
+                      </svg>
+                  </button>
+              </nav>
+              <div id="mobile-navigation" data-menu class="mt-4 hidden flex-col gap-2 rounded-2xl border border-slate-700/70 bg-slate-900/90 p-4 text-sm font-medium tracking-wide text-slate-200 shadow-lg backdrop-blur md:hidden">
+                  <a class="flex items-center justify-between rounded-xl px-3 py-2 transition hover:bg-slate-800/80" href="features.html">
+                      <span>features</span>
+                      <span class="material-symbols-outlined text-base text-primary-400">chevron_right</span>
+                  </a>
+                  <a class="flex items-center justify-between rounded-xl px-3 py-2 transition hover:bg-slate-800/80" href="docs.html">
+                      <span>docs</span>
+                      <span class="material-symbols-outlined text-base text-primary-400">chevron_right</span>
+                  </a>
+                  <a class="flex items-center justify-between rounded-xl px-3 py-2 transition hover:bg-slate-800/80" href="about.html">
+                      <span>About</span>
+                      <span class="material-symbols-outlined text-base text-primary-400">chevron_right</span>
+                  </a>
+                  <a class="flex items-center justify-between rounded-xl px-3 py-2 transition hover:bg-slate-800/80" href="content.html">
+                      <span>content</span>
+                      <span class="material-symbols-outlined text-base text-primary-400">chevron_right</span>
+                  </a>
+              </div>
         </header>
-        <main class="flex flex-col items-center justify-center text-center pt-20 pb-16 sm:pt-28 sm:pb-24">
-            <h1 class="text-5xl sm:text-6xl lg:text-8xl font-medium tracking-tight text-[#2B3650] mb-8">
-                Towards thoughts
-            </h1>
-            <a class="bg-slate-700 text-[#2B3650] font-sans font-semibold py-3 px-8 rounded-md hover:bg-slate-600 transition-colors duration-300 mb-12 sm:mb-16"
-                href="#">
-                Learn More
-            </a>
-            <div class="w-full max-w-4xl">
-                <img src="./Group%202.png" alt="Group 2 graphic" />
-            </div>
+          <main class="flex flex-col gap-12 pt-20 pb-16 sm:gap-16 sm:pt-28 sm:pb-24 lg:flex-row lg:items-center">
+              <div class="mx-auto flex w-full max-w-2xl flex-col items-center text-center lg:mx-0 lg:max-w-xl lg:items-start lg:text-left">
+                  <h1 class="mb-6 text-5xl font-medium tracking-tight text-[#F5F5DC] sm:text-6xl lg:text-7xl">
+                      Towards thoughts
+                  </h1>
+                  <p class="mb-8 text-base text-slate-300 sm:text-lg lg:mb-10">
+                      토스의 심플한 인터랙션을 참고해 필요한 정보만 빠르게 전달하도록 구성했어요. 단순한 흐름 속에서 중요한 액션에 집중해 보세요.
+                  </p>
+                  <div class="flex w-full flex-col gap-4 sm:flex-row sm:justify-center lg:justify-start">
+                      <a class="inline-flex items-center justify-center rounded-full bg-slate-700 px-8 py-3 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-[#F5F5DC] transition-colors duration-300 hover:bg-slate-600" href="#">
+                          Learn More
+                      </a>
+                      <a class="inline-flex items-center justify-center rounded-full border border-slate-600 px-8 py-3 font-sans text-sm font-semibold uppercase tracking-[0.2em] text-slate-200 transition-colors duration-300 hover:border-primary-400 hover:text-primary-400" href="docs.html">
+                          View Docs
+                      </a>
+                  </div>
+              </div>
+              <div class="relative w-full lg:flex-1">
+                  <div class="relative left-1/2 w-screen max-w-none -translate-x-1/2">
+                      <img class="w-full object-contain" src="./Group%202.png" alt="Group 2 graphic" />
+                  </div>
+              </div>
         </main>
 
         <section class="flex flex-1 justify-center py-16 sm:py-24">
