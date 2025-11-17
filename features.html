@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="ko" class="dark">
 <head>
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Haverbex - Features</title>
+    <title>헤이버벡스 뉴스룸 | 속보</title>
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,container-queries"></script>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
@@ -51,7 +51,7 @@
     </script>
     <style>
         body {
-            background-image: url("./R1280x0 11.png");
+            background-image: linear-gradient(135deg, rgba(15,23,42,0.95), rgba(2,6,23,0.95)), url("./R1280x0 11.png");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -67,85 +67,203 @@
     </style>
      <script defer src="scripts.js"></script>
  </head>
-<body class="bg-background-dark font-display text-[#F5F5DC] antialiased selection:bg-primary/20">
-     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-         <header class="py-6">
-             <nav class="border-b border-slate-700 pb-4">
-                 <div class="flex items-center justify-between">
-                     <a class="text-2xl font-semibold tracking-wide text-[#2B3650]" href="index.html">Haverbex</a>
-                     <ul class="hidden md:flex items-center space-x-8 text-sm tracking-wider">
-                         <li><a class="text-primary-400 underline underline-offset-4" href="features.html">features</a></li>
-                         <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="docs.html">docs</a></li>
-                         <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="about.html">About</a></li>
-                         <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">content</a></li>
-                     </ul>
-                     <button
-                         class="md:hidden text-[#F5F5DC]"
-                         type="button"
-                         aria-controls="mobile-nav"
-                         aria-expanded="false"
-                         data-menu-toggle="mobile-nav">
-                         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                             xmlns="http://www.w3.org/2000/svg">
-                             <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-                             </path>
-                         </svg>
-                     </button>
+<body class="bg-background-dark font-display text-slate-100 antialiased selection:bg-primary/20">
+     <div class="min-h-screen bg-black/20">
+         <div class="container mx-auto px-4 sm:px-6 lg:px-8 pb-16">
+             <header class="py-6 space-y-4">
+                 <div class="flex flex-col gap-2 rounded-xl border border-white/10 bg-red-600/20 px-4 py-2 text-xs uppercase tracking-[0.2em] text-red-200 sm:flex-row sm:items-center sm:justify-between">
+                     <span>Flash Update</span>
+                     <span class="font-semibold text-white">경보: AI 안전 프레임워크 1차 표결 시작</span>
                  </div>
-                 <div id="mobile-nav" class="hidden flex-col space-y-4 pt-4 md:hidden">
-                     <a class="text-primary-400 text-sm tracking-wider underline underline-offset-4" href="features.html">features</a>
-                     <a class="text-slate-200 text-sm tracking-wider transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="docs.html">docs</a>
-                     <a class="text-slate-200 text-sm tracking-wider transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="about.html">About</a>
-                     <a class="text-slate-200 text-sm tracking-wider transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">content</a>
-                 </div>
-             </nav>
-         </header>
-        <main class="py-20 sm:py-28 lg:py-32">
-            <section class="mx-auto max-w-4xl text-center">
-                <h1 class="text-5xl sm:text-6xl font-semibold tracking-tight">Features</h1>
-                <p class="mt-6 text-lg leading-8 text-slate-200">
-                    Explore the capabilities that make Haverbex a powerful companion for teams of every size.
-                </p>
-            </section>
-            <section class="mt-16 grid gap-8 md:grid-cols-2">
-                <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
-                    <div class="flex items-center gap-4">
-                        <span class="material-symbols-outlined text-primary-400 text-3xl">hub</span>
-                        <h2 class="text-2xl font-bold text-[#F5F5DC]">Unified Integrations</h2>
+                 <nav class="border border-white/10 bg-slate-900/60 px-4 py-4 rounded-2xl">
+                     <div class="flex items-center justify-between">
+                         <a class="text-2xl font-semibold tracking-wide text-white" href="index.html">헤이버벡스 뉴스룸</a>
+                         <ul class="hidden md:flex items-center space-x-8 text-sm tracking-wider">
+                             <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="index.html">뉴스 홈</a></li>
+                             <li><a class="text-primary-400 underline underline-offset-4" href="features.html">속보</a></li>
+                             <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="docs.html">데이터 리포트</a></li>
+                             <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="about.html">편집실 소개</a></li>
+                             <li><a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">아카이브</a></li>
+                         </ul>
+                         <button
+                             class="md:hidden text-slate-100"
+                             type="button"
+                             aria-controls="mobile-nav"
+                             aria-expanded="false"
+                             data-menu-toggle="mobile-nav">
+                             <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                                 </path>
+                             </svg>
+                         </button>
+                     </div>
+                     <div id="mobile-nav" class="hidden flex-col space-y-4 pt-4 md:hidden text-sm tracking-wider">
+                         <a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="index.html">뉴스 홈</a>
+                         <a class="text-primary-400 underline underline-offset-4" href="features.html">속보</a>
+                         <a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="docs.html">데이터 리포트</a>
+                         <a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="about.html">편집실 소개</a>
+                         <a class="text-slate-200 transition-colors duration-300 hover:text-primary-400 hover:underline underline-offset-4" href="content.html">아카이브</a>
+                     </div>
+                 </nav>
+             </header>
+            <main class="space-y-14">
+                <section class="rounded-3xl border border-white/10 bg-slate-900/80 p-8 shadow-xl shadow-black/40">
+                    <div class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between">
+                        <div class="max-w-2xl">
+                            <p class="text-xs uppercase tracking-[0.35em] text-red-200">Top Breaking</p>
+                            <h1 class="mt-4 text-4xl font-bold text-white">AI 안전법 1차 표결 돌입…찬성 188 vs 반대 32</h1>
+                            <p class="mt-4 text-lg text-slate-200">
+                                본회의 표결에 앞서 진행된 사전 협의에서 국회 4당이 조건부 합의안을 도출했다.
+                                핵심 쟁점이던 알고리즘 투명성 조항은 '단계적 공개'로 조정됐고, 기업 영향 평가 보고서 제출 기한이 18개월로 연장됐다.
+                            </p>
+                            <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-slate-400">
+                                <span class="inline-flex items-center gap-2 rounded-full bg-white/5 px-3 py-1"><span class="material-symbols-outlined text-base text-red-300">emergency</span>속보</span>
+                                <span>2025년 11월 17일 09:52</span>
+                                <span>국회 취재 = 김하람 기자</span>
+                            </div>
+                        </div>
+                        <div class="grid gap-4 rounded-2xl border border-white/10 bg-black/20 p-5 text-sm text-slate-300">
+                            <div class="flex items-center justify-between">
+                                <span>의사 진행 상황</span>
+                                <span class="text-white font-semibold">표결 중</span>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-[0.3em] text-slate-400">관심 키워드</p>
+                                <div class="mt-2 flex flex-wrap gap-2">
+                                    <span class="rounded-full bg-white/10 px-3 py-1 text-xs">#알고리즘공개</span>
+                                    <span class="rounded-full bg-white/10 px-3 py-1 text-xs">#시민감시</span>
+                                    <span class="rounded-full bg-white/10 px-3 py-1 text-xs">#스타트업</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="text-xs uppercase tracking-[0.3em] text-slate-400">다음 브리핑</p>
+                                <p class="mt-1 text-white font-semibold">정무위 기자간담회 · 10:30</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Connect with popular tools and services through our library of integrations designed to keep your work in sync.
-                    </p>
-                </article>
-                <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
-                    <div class="flex items-center gap-4">
-                        <span class="material-symbols-outlined text-primary-400 text-3xl">rocket_launch</span>
-                        <h2 class="text-2xl font-bold text-[#F5F5DC]">Automation Pipelines</h2>
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <button class="rounded-full border border-white/20 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white">전체</button>
+                        <button class="rounded-full border border-white/10 bg-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white">국회</button>
+                        <button class="rounded-full border border-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">산업</button>
+                        <button class="rounded-full border border-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">국제</button>
+                        <button class="rounded-full border border-white/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.2em] text-white/70">현장</button>
                     </div>
-                    <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Automate repetitive workflows with visual builders and event triggers that adapt to your team’s processes.
-                    </p>
-                </article>
-                <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
-                    <div class="flex items-center gap-4">
-                        <span class="material-symbols-outlined text-primary-400 text-3xl">insights</span>
-                        <h2 class="text-2xl font-bold text-[#F5F5DC]">Insightful Analytics</h2>
+                </section>
+
+                <section class="grid gap-8 lg:grid-cols-[1.6fr,1fr]">
+                    <div class="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-xs uppercase tracking-[0.4em] text-red-200">Minute by Minute</p>
+                                <h2 class="mt-2 text-2xl font-bold text-white">실시간 타임라인</h2>
+                            </div>
+                            <span class="text-xs text-slate-400">업데이트 2분 전</span>
+                        </div>
+                        <ol class="mt-6 space-y-6 border-l border-white/10 pl-6">
+                            <li class="relative">
+                                <span class="absolute -left-[35px] flex h-6 w-6 items-center justify-center rounded-full bg-red-500 text-xs font-bold text-white">Now</span>
+                                <h3 class="text-lg font-semibold text-white">여·야, '시민 감사단' 명단 공개 합의</h3>
+                                <p class="text-sm text-slate-300 mt-2">감사단 30명 가운데 시민 추천 18명, 전문가 12명 구성. 위촉식은 다음 주 진행.</p>
+                            </li>
+                            <li class="relative">
+                                <span class="absolute -left-[35px] flex h-6 w-6 items-center justify-center rounded-full bg-white/10 text-xs font-semibold text-white">09:30</span>
+                                <h3 class="text-lg font-semibold text-white">고위험 AI 분류 4단계로 세분화</h3>
+                                <p class="text-sm text-slate-300 mt-2">데이터 독점 우려를 줄이기 위해 가중치 공개 의무를 1년 유예.</p>
+                            </li>
+                            <li class="relative">
+                                <span class="absolute -left-[35px] flex h-6 w-6 items-center justify-center rounded-full bg-white/10 text-xs font-semibold text-white">09:05</span>
+                                <h3 class="text-lg font-semibold text-white">기자단, 본회의장 상주 배정</h3>
+                                <p class="text-sm text-slate-300 mt-2">투명한 취재를 위해 회의록·영상이 동시에 공개된다.</p>
+                            </li>
+                            <li class="relative">
+                                <span class="absolute -left-[35px] flex h-6 w-6 items-center justify-center rounded-full bg-white/10 text-xs font-semibold text-white">08:40</span>
+                                <h3 class="text-lg font-semibold text-white">시민단체, '투명성 포털' 시연 요구</h3>
+                                <p class="text-sm text-slate-300 mt-2">행안부는 1분기 내 시범 버전을 공개하겠다고 답변.</p>
+                            </li>
+                        </ol>
                     </div>
-                    <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Monitor progress in real time with dashboards and alerts that help teams stay ahead of critical decisions.
-                    </p>
-                </article>
-                <article class="rounded-xl bg-slate-900/80 p-8 backdrop-blur">
-                    <div class="flex items-center gap-4">
-                        <span class="material-symbols-outlined text-primary-400 text-3xl">verified_user</span>
-                        <h2 class="text-2xl font-bold text-[#F5F5DC]">Enterprise Safeguards</h2>
+                    <div class="grid gap-6">
+                        <article class="rounded-3xl border border-white/10 bg-black/40 p-6">
+                            <div class="flex items-center justify-between">
+                                <h2 class="text-xl font-bold text-white">현장 상황판</h2>
+                                <span class="material-symbols-outlined text-primary-300 text-3xl">satellite_alt</span>
+                            </div>
+                            <dl class="mt-6 space-y-4 text-sm text-slate-300">
+                                <div class="flex items-center justify-between">
+                                    <dt>본회의장 좌석 점유율</dt>
+                                    <dd class="text-white font-semibold">92%</dd>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <dt>취재 패스 발급</dt>
+                                    <dd class="text-white font-semibold">124명</dd>
+                                </div>
+                                <div class="flex items-center justify-between">
+                                    <dt>시민 방청 신청</dt>
+                                    <dd class="text-white font-semibold">2,310건</dd>
+                                </div>
+                            </dl>
+                            <p class="mt-4 text-xs text-slate-400">자료: 국회 사무처 · 09:40 기준</p>
+                        </article>
+                        <article class="rounded-3xl border border-white/10 bg-slate-900/70 p-6">
+                            <p class="text-xs uppercase tracking-[0.3em] text-primary-300">Field Desk</p>
+                            <h2 class="mt-2 text-2xl font-bold text-white">현장 취재 메모</h2>
+                            <ul class="mt-6 space-y-4 text-sm text-slate-300">
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-base text-primary-300">mic</span>
+                                    산업계는 "테스트 데이터 공개 시 샘플링 기준을 명확히 해야 한다"고 강조.
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-base text-primary-300">mic</span>
+                                    시민단체는 'AI 피해 신고 창구'를 독립기구로 운영할 것을 요구.
+                                </li>
+                                <li class="flex items-start gap-3">
+                                    <span class="material-symbols-outlined text-base text-primary-300">mic</span>
+                                    해외 기자단은 글로벌 규제 동향을 비교하는 공동 취재를 제안.
+                                </li>
+                            </ul>
+                            <a class="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary-300 hover:text-primary-200" href="about.html">
+                                취재팀 소개
+                                <span class="material-symbols-outlined text-base">arrow_outward</span>
+                            </a>
+                        </article>
                     </div>
-                    <p class="mt-4 text-[#F5F5DC] leading-7">
-                        Keep data secure with fine-grained access controls, audit trails, and compliance-ready infrastructure.
-                    </p>
-                </article>
-            </section>
-        </main>
+                </section>
+
+                <section class="rounded-3xl border border-white/10 bg-black/40 p-6">
+                    <div class="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
+                        <div>
+                            <p class="text-xs uppercase tracking-[0.4em] text-primary-300">Live Blog</p>
+                            <h2 class="text-3xl font-bold text-white">속보 블로그</h2>
+                        </div>
+                        <div class="flex flex-wrap gap-3 text-xs text-slate-300">
+                            <span class="inline-flex items-center gap-2 rounded-full border border-white/20 px-3 py-1"><span class="material-symbols-outlined text-base text-primary-300">schedule</span>자동 새로고침</span>
+                            <span class="inline-flex items-center gap-2 rounded-full border border-white/20 px-3 py-1"><span class="material-symbols-outlined text-base text-primary-300">rss_feed</span>멀티플랫폼</span>
+                        </div>
+                    </div>
+                    <div class="mt-8 grid gap-6 lg:grid-cols-3">
+                        <article class="rounded-2xl border border-white/10 bg-slate-900/70 p-5 flex flex-col">
+                            <p class="text-xs text-slate-400">09:20 · 국회</p>
+                            <h3 class="mt-2 text-xl font-semibold text-white">감시 기술 수출, 사전 심사제 도입</h3>
+                            <p class="mt-3 text-sm text-slate-300 flex-1">수출심의위원회가 AI 감시 솔루션을 전략물자 수준으로 관리하는 방안을 가결.</p>
+                            <a class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary-300 hover:text-primary-200" href="content.html">기사 전문</a>
+                        </article>
+                        <article class="rounded-2xl border border-white/10 bg-slate-900/70 p-5 flex flex-col">
+                            <p class="text-xs text-slate-400">09:05 · 세종</p>
+                            <h3 class="mt-2 text-xl font-semibold text-white">데이터 분쟁 조정위, 온라인 생중계</h3>
+                            <p class="mt-3 text-sm text-slate-300 flex-1">심의 과정 전면 공개를 요구하는 시민단체의 청원이 20만 명을 돌파.</p>
+                            <a class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary-300 hover:text-primary-200" href="docs.html">자료 보기</a>
+                        </article>
+                        <article class="rounded-2xl border border-white/10 bg-slate-900/70 p-5 flex flex-col">
+                            <p class="text-xs text-slate-400">08:55 · 부산</p>
+                            <h3 class="mt-2 text-xl font-semibold text-white">항만 IoT 센서 4만여 개 긴급 점검</h3>
+                            <p class="mt-3 text-sm text-slate-300 flex-1">신형 펌웨어 오류를 사전에 잡기 위해 민·관 합동 대응 체계를 가동.</p>
+                            <a class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-primary-300 hover:text-primary-200" href="content.html">현장 스케치</a>
+                        </article>
+                    </div>
+                </section>
+            </main>
+        </div>
     </div>
 </body>
 </html>
