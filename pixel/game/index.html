@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The Lamp of Dawn: a Haverbex pixel-art action-platformer in six nights about quantization, inference speed, altermagnet memory and bio research.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:,">
+<title>The Lamp of Dawn · Haverbex</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #wrap { position: relative; }
+  #screen { display: block; image-rendering: pixelated; image-rendering: crisp-edges; }
+  /* CSS fallback CRT (used only when WebGL is unavailable) */
+  #wrap.crt { border-radius: 14px; overflow: hidden; filter: saturate(1.15) contrast(1.05); }
+  #wrap.crt::after { content: ''; position: absolute; inset: 0; pointer-events: none; border-radius: 14px;
+    background: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0, rgba(0,0,0,0) 50%, rgba(0,0,0,.32) 50%, rgba(0,0,0,.32) 100%),
+      repeating-linear-gradient(to right, rgba(255,0,0,.05) 0 1px, rgba(0,255,0,.05) 1px 2px, rgba(0,0,255,.05) 2px 3px);
+    background-size: 100% calc(100% / 270), 3px 100%; box-shadow: inset 0 0 80px rgba(0,0,0,.75), inset 0 0 0 3px rgba(0,0,0,.6); }
+  #wrap.crt #screen { animation: crtflick 0.12s infinite; }
+  #wrap.crt-pow #screen { animation: crton .9s ease-out both; }
+  @keyframes crtflick { 50% { opacity: .985; } }
+  @keyframes crton { 0% { transform: scale(0, .004); filter: brightness(4); } 35% { transform: scale(1, .004); filter: brightness(4); } 100% { transform: scale(1, 1); filter: brightness(1); } }
+  @media (prefers-reduced-motion: reduce) { #wrap.crt #screen, #wrap.crt-pow #screen { animation: none; } }
+  #fs { position: fixed; top: 8px; right: 8px; z-index: 2; width: 30px; height: 30px; padding: 0; border: 1px solid #5a5650; border-radius: 3px;
+    background: rgba(0,0,0,.55); color: #c2baaa; font: 16px/28px monospace; cursor: pointer; opacity: .35; transition: opacity .2s; }
+  #fs:hover, #fs:focus-visible { opacity: 1; }
+  :fullscreen #fs { display: none; }
+</style>
+</head>
+<body>
+<button id="fs" title="Fullscreen (F)" aria-label="Toggle fullscreen" tabindex="-1">&#x26F6;</button>
+<div id="wrap"><canvas id="screen" width="480" height="270" aria-label="The Lamp of Dawn game screen"></canvas></div>
+<script src="js/data.js"></script>
+<script src="js/story.js"></script>
+<script src="js/logic.js"></script>
+<script src="js/autopilot.js"></script>
+<script src="js/crt.js"></script>
+<script src="js/slime_art.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

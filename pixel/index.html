@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Haverbex · Lighter models, faster engines, new memory, living matter</title>
+<meta name="description" content="Haverbex, an AI research studio in Busan: quantization and speed, altermagnet RAM, bio. Play The Lamp of Dawn.">
+<meta name="theme-color" content="#040404">
+<meta property="og:title" content="Haverbex · The Lamp of Dawn">
+<meta property="og:description" content="Quantization, altermagnet RAM and bio research, as a pixel-art game.">
+<link rel="icon" href="data:,">
+<link rel="preload" href="assets/fonts/Galmuri9.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="assets/fonts/Galmuri14.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="crt-page">
+<a class="skip" href="#about">Skip the game</a>
+
+<header class="top" id="top">
+  <a class="logo" href="#top" aria-label="Haverbex home"><span class="lamp" aria-hidden="true"></span>HAVERBEX</a>
+  <nav aria-label="Sections">
+    <a href="#about">About</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+  </nav>
+  <button id="crtBtn" class="chip" type="button" aria-pressed="true" title="Toggle the CRT look (V)">CRT: ON</button>
+</header>
+
+<main>
+<!-- ================================================================ HERO: the game -->
+<section class="hero" id="play" aria-label="The Lamp of Dawn, playable game">
+<div class="cab" id="cab">
+<iframe id="game" src="game/index.html" title="The Lamp of Dawn — a Haverbex pixel-art game" allow="fullscreen; autoplay" allowfullscreen></iframe>
+<button class="start" id="start" type="button">
+<span class="start-k">&#9654; PLAY</span>
+<span class="start-s"><b>HAVERBEX</b> · Lighter, faster AI. New memory. Living matter.</span>
+</button>
+<div class="mobile-note" id="mnote">
+<p class="mn-t">THE LAMP OF DAWN</p>
+<p>Keyboard game. Watch the demo here.</p>
+<button class="btn" id="demoBtn" type="button">&#9654; WATCH THE DEMO</button>
+</div>
+</div>
+<div class="hudbar">
+<p class="keys"><b>&larr; &rarr;</b> run &nbsp;<b>&uarr;</b> jump &nbsp;<b>SHIFT</b> step &nbsp;<b>SPACE</b> strike &nbsp;<b>V</b> CRT</p>
+<p class="readcount"><span class="stele" aria-hidden="true"></span>Tablets: <b id="foundN">0</b> / 14</p>
+<a class="chip" href="game/index.html" target="_blank" rel="noopener">Full window &#8599;</a>
+</div>
+</section>
+
+<canvas class="strip" data-room="2a" data-stage="palace" data-row="2" aria-hidden="true"></canvas>
+
+<!-- ================================================================ ABOUT -->
+<section class="sec" id="about" data-lore="haverbex">
+<div class="card-title" style="--room:url(game/assets/rooms/6b.png)">
+<p class="night">Prologue</p>
+<h2>THE KEEPERS OF THE LAMP</h2>
+</div>
+<div class="cols">
+<div class="col">
+<p class="lead"><b>Haverbex</b> is an independent AI research studio in Busan.</p>
+<p>Each hall in the game is a research track. Each tablet is a real project.</p>
+</div>
+<div class="col panel">
+<div class="stats">
+<div><b>31</b><span>public repos</span></div>
+<div><b>6</b><span>open models</span></div>
+<div><b>3</b><span>research tracks</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<canvas class="strip" data-room="4d" data-stage="caverns" data-row="2" aria-hidden="true"></canvas>
+
+<!-- ================================================================ RESEARCH -->
+<section class="sec" id="research">
+<div class="card-title" style="--room:url(game/assets/rooms/2d.png)">
+<p class="night">Three crafts</p>
+<h2>OUR RESEARCH</h2>
+</div>
+<div class="pillars">
+<article class="pillar p-q" id="quant">
+<div class="p-head" style="--room:url(game/assets/rooms/1a.png)"><span class="p-n">NIGHTS I – III</span><h3>QUANTIZATION &amp; SPEED</h3></div>
+<p class="p-tag">Smaller weights, same answers, faster runs.</p>
+<p class="p-links"><a href="#projects" data-filter="q">9 projects &darr;</a></p>
+</article>
+<article class="pillar p-m" id="altermagnet" data-lore="altermagnet">
+<div class="p-head" style="--room:url(game/assets/rooms/4a.png)"><span class="p-n">NIGHT IV</span><h3>ALTERMAGNET RAM</h3></div>
+<p class="p-tag">Memory from magnets with no stray field.</p>
+<p class="p-links status">Early-stage, in-house.</p>
+</article>
+<article class="pillar p-b" id="bio" data-lore="bio">
+<div class="p-head" style="--room:url(game/assets/rooms/5a.png)"><span class="p-n">NIGHT V</span><h3>BIO RESEARCH</h3></div>
+<canvas class="slime" id="slimeBio" width="120" height="36" aria-label="Pixel art of the Golden Net, a Physarum slime mould" role="img"></canvas>
+<p class="p-tag">DNA tools, and computing with slime moulds.</p>
+<p class="p-links"><a href="#projects" data-filter="b">1 project &darr;</a></p>
+</article>
+</div>
+</section>
+
+<canvas class="strip" data-room="5d" data-stage="ruins" data-row="2" data-slime="1" aria-hidden="true"></canvas>
+
+<!-- ================================================================ PROJECTS -->
+<section class="sec" id="projects">
+<div class="card-title" style="--room:url(game/assets/rooms/3a.png)">
+<p class="night">The tablets</p>
+<h2>PROJECTS</h2>
+</div>
+<p class="intro">Read a tablet in the game and its card lights up.</p>
+<div class="filters" role="group" aria-label="Filter projects">
+<button class="chip on" data-f="all" type="button">ALL</button><button class="chip" data-f="q" type="button">QUANTIZATION &amp; SPEED</button><button class="chip" data-f="b" type="button">BIO</button>
+</div>
+<div class="grid" id="grid">
+<a class="proj" data-p="q" data-lore="mix-stq" href="https://github.com/Topabaem05/mix-stq" target="_blank" rel="noopener">
+<span class="pk">GITHUB · <i class="lang py"></i>Python</span><h4>mix-stq</h4>
+<p>3-bit weights, within 0.4 points of full size.</p>
+<span class="where">Night I</span></a>
+<a class="proj" data-p="q" data-lore="littlebit" href="https://huggingface.co/Haverbex/Qwen3.8-27B-LittleBit-1bit" target="_blank" rel="noopener">
+<span class="pk">HUGGING FACE · model</span><h4>Qwen3.8-27B-LittleBit</h4>
+<p>A 27B model at ~1 bit. Honest about what it lost.</p>
+<span class="where">Night I</span></a>
+<a class="proj" data-p="q" data-lore="bitnet-embed" href="https://github.com/Topabaem05/bitnet-embed" target="_blank" rel="noopener">
+<span class="pk">GITHUB · <i class="lang py"></i>Python</span><h4>bitnet-embed</h4>
+<p>Embeddings on a BitNet backbone.</p>
+<span class="where">Night I</span></a>
+<a class="proj" data-p="q" data-lore="omegahee" href="https://github.com/Topabaem05/Omegahee" target="_blank" rel="noopener">
+<span class="pk">GITHUB · <i class="lang rs"></i>Rust</span><h4>Omegahee</h4>
+<p>2.8–3.2&times; faster decoding on Apple Silicon (provisional).</p>
+<span class="where">Night II</span></a>
+<a class="proj" data-p="q" data-lore="bitsandbytes-tpu" href="https://github.com/Topabaem05/bitsandbytes-TPU" target="_blank" rel="noopener">
+<span class="pk">GITHUB · <i class="lang py"></i>Python</span><h4>bitsandbytes-TPU</h4>
+<p>4-bit bitsandbytes layers on TPUs.</p>
+<span class="where">Night II</span></a>
+<a class="proj" data-p="q" data-lore="ultrafast" href="https://huggingface.co/Haverbex/Qwen-Image-2.1-UltraFast" target="_blank" rel="noopener">
+<span class="pk">HUGGING FACE · model + GGUF</span><h4>Qwen-Image-2.1-UltraFast</h4>
+<p>Image editing in 8 steps instead of 40.</p>
+<span class="where">Night III</span></a>
+<a class="proj" data-p="q" data-lore="crab-cookbook" href="https://huggingface.co/Haverbex/ShoreCrab-128M" target="_blank" rel="noopener">
+<span class="pk">HUGGING FACE · model</span><h4>ShoreCrab-128M</h4>
+<p>A 128M model that picks the right answer, or none.</p>
+<span class="where">Night III</span></a>
+<a class="proj" data-p="q" data-lore="crab-cookbook" href="https://github.com/Topabaem05/Crab-cookbook" target="_blank" rel="noopener">
+<span class="pk">GITHUB · <i class="lang py"></i>Python</span><h4>Crab-cookbook</h4>
+<p>Recipes and clients for ShoreCrab.</p>
+<span class="where">Night III</span></a>
+<a class="proj" data-p="q" data-lore="zcr" href="https://github.com/Topabaem05/ZCR" target="_blank" rel="noopener">
+<span class="pk">GITHUB · <i class="lang zg"></i>Zig</span><h4>ZCR</h4>
+<p>Faster file tools for coding agents.</p>
+<span class="where">Night III</span></a>
+<a class="proj" data-p="b" data-lore="blastid" href="https://github.com/Topabaem05/blastid" target="_blank" rel="noopener">
+<span class="pk">GITHUB · repository</span><h4>blastid</h4>
+<p>Names fungi and lichens from their DNA.</p>
+<span class="where">Night V</span></a>
+</div>
+<p class="more"><a href="https://github.com/Topabaem05" target="_blank" rel="noopener">github.com/Topabaem05</a> · <a href="https://huggingface.co/Haverbex" target="_blank" rel="noopener">huggingface.co/Haverbex</a></p>
+</section>
+
+<canvas class="strip" data-room="2d" data-stage="palace" data-row="2" aria-hidden="true"></canvas>
+
+<!-- ================================================================ CONTACT -->
+<section class="sec" id="contact">
+<div class="card-title" style="--room:url(game/assets/rooms/6c.png)">
+<p class="night">Dawn</p>
+<h2>TALK TO US</h2>
+</div>
+<div class="contact panel">
+<p class="lead">Research, collaboration or investment.</p>
+<p class="links">
+<a class="btn" href="mailto:guritopabaem@gmail.com">&#9993; guritopabaem@gmail.com</a>
+<a class="btn" href="https://github.com/Topabaem05" target="_blank" rel="noopener">GitHub &#8599;</a>
+<a class="btn" href="https://huggingface.co/Haverbex" target="_blank" rel="noopener">Hugging Face &#8599;</a>
+</p>
+</div>
+</section>
+</main>
+
+<footer class="foot">
+  <p>&copy; 2026 Haverbex · Busan, South Korea</p>
+  <p>The Lamp of Dawn — Direction: 파뱀 토 · Pixel art &amp; animation: Landing Page Bot (랜딩페이지 관리봇) · Font: Galmuri (SIL OFL 1.1)</p>
+  <p><a href="#top">Back to the game &uarr;</a></p>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="crt-overlay" aria-hidden="true"></div>
+
+<script src="game/js/data.js"></script>
+<script src="game/js/slime_art.js"></script>
+<script src="page.js"></script>
+</body>
+</html>
